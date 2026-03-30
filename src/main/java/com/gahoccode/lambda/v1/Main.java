@@ -1,4 +1,6 @@
-package com.gahoccode.lambda;
+package com.gahoccode.lambda.v1;
+
+import com.gahoccode.lambda.MathOperation;
 
 public class Main {
 
