@@ -1,0 +1,22 @@
+package com.gahoccode.lambda;
+
+public class Main {
+
+    private static int calculate(MathOperation mathOperation){
+        int a = 100;
+        int b = 200;
+        return mathOperation.operate(a, b);
+    }
+
+    public static void main(String[] args) {
+        MathOperation add = Integer::sum;
+        MathOperation subtract = (a,b ) -> a - b;
+        MathOperation multiply = (a,b) -> a * b;
+        MathOperation divide = (a, b) -> a / b;
+
+        System.out.println(calculate(add));
+        System.out.println(calculate(subtract));
+        System.out.println(calculate(multiply));
+        System.out.println(calculate(divide));
+    }
+}
